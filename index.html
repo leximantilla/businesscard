@@ -5,63 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SYRA SANTOS | SALES ARCHITECT</title>
   
-  <!-- Montserrat Font for Body, Century Gothic Fallbacks for Logo -->
+  <!-- Google Font: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* Color Palette derived from the navy image with soft neutral contrasts */
+    /* Premium Color Palette & Tokens */
     :root {
-      --brand-navy: #213B6E;        /* Primary Brand Color */
-      --brand-navy-dark: #16284B;   /* High-Contrast Text Color */
-      --soft-ice-bg: #EAEFF5;       /* Page Backdrop */
-      --card-bg: #F8FAF7;           /* Eye-Friendly Off-White Card Surface */
-      --muted-gray: #6C7A89;        /* Subtle Secondary Info */
-      --accent-line: #213B6E;        /* Divider Bar */
+      --primary-navy: #183A73;      /* Core Brand Accent & Hero Text */
+      --secondary-navy: #365A8C;    /* Muted Text / Job Title / Location */
+      --soft-bg: #F4F6F9;           /* Viewport Background */
+      --card-bg: #FCFCFC;           /* Ultra-subtle Off-White Card Surface */
+      --light-gray: #E8E8E8;        /* Soft Dividers & Containers */
+      --border-line: #D8D8D8;        /* Understated Divider Line */
+      --text-muted: #8E9BAE;        /* Subtle Labels */
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Montserrat', 'Century Gothic', sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
 
     body {
-      background-color: var(--soft-ice-bg);
+      background-color: var(--soft-bg);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 24px 20px;
+      padding: 32px 20px;
     }
 
-    /* Main Card Container */
+    /* Architectural Card Container */
     .card-container {
       background-color: var(--card-bg);
-      border-radius: 28px;
+      border-radius: 36px;
       width: 100%;
       max-width: 380px;
-      padding: 40px 32px 36px;
+      padding: 52px 36px 44px;
       text-align: center;
-      box-shadow: 0 16px 40px rgba(33, 59, 110, 0.12);
+      box-shadow: 0 12px 32px rgba(24, 58, 115, 0.04);
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid rgba(33, 59, 110, 0.15);
+      border: 1px solid rgba(232, 232, 232, 0.8);
     }
 
-    /* Recreated HTML/CSS Company Logo */
+    /* Company Logo - Reduced & Perfectly Proportioned */
     .company-logo {
-      margin-bottom: 28px;
+      margin-top: 4px;
+      margin-bottom: 40px;
     }
 
     .logo-main {
-      font-family: 'Century Gothic', 'Montserrat', sans-serif;
-      font-size: 1.45rem;
+      font-size: 1.15rem;
       letter-spacing: -0.02em;
-      color: var(--brand-navy);
+      color: var(--primary-navy);
       line-height: 1;
     }
 
@@ -74,128 +76,131 @@
     }
 
     .logo-sub {
-      font-family: 'Century Gothic', 'Montserrat', sans-serif;
-      font-size: 0.58rem;
+      font-size: 0.48rem;
       font-weight: 600;
       letter-spacing: 0.42em;
-      color: var(--brand-navy);
+      color: var(--primary-navy);
       text-transform: uppercase;
-      margin-top: 5px;
+      margin-top: 6px;
       text-align: center;
-      padding-left: 0.42em; /* Centers letter spacing offset */
+      padding-left: 0.42em; /* Optical centering compensation */
     }
 
-    /* Individual's Name */
+    /* Individual Name - Visual Anchor */
     h1 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--brand-navy-dark);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-      line-height: 1.2;
-    }
-
-    /* Position Title */
-    .title {
-      font-size: 0.78rem;
-      color: var(--brand-navy);
+      font-size: 1.65rem;
       font-weight: 700;
-      letter-spacing: 0.22em;
+      color: var(--primary-navy);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 8px;
+      line-height: 1.15;
     }
 
-    /* Divider Accent */
-    .accent-bar {
-      height: 3px;
-      width: 44px;
-      background-color: var(--brand-navy);
-      border-radius: 2px;
+    /* Job Title */
+    .title {
+      font-size: 0.72rem;
+      color: var(--secondary-navy);
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
       margin-bottom: 24px;
     }
 
-    /* Contact Information */
+    /* Understated Thin Divider */
+    .divider-line {
+      height: 1px;
+      width: 28px;
+      background-color: var(--border-line);
+      margin-bottom: 28px;
+    }
+
+    /* Contact Details */
     .info-group {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 10px;
+      margin-bottom: 20px;
       width: 100%;
     }
 
     .info-link {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--brand-navy-dark);
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--primary-navy);
       text-decoration: none;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
       transition: opacity 0.2s ease;
       word-break: break-all;
+      line-height: 1.4;
     }
 
     .info-link:hover {
-      opacity: 0.75;
+      opacity: 0.7;
     }
 
     /* Location */
     .location {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--brand-navy);
-      letter-spacing: 0.15em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--secondary-navy);
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      margin-bottom: 24px;
+      margin-bottom: 36px;
     }
 
-    /* QR Code Tile */
+    /* Refined QR Code Section */
     .qr-section {
       background-color: #FFFFFF;
-      padding: 12px;
-      border-radius: 18px;
+      padding: 18px;
+      border-radius: 22px;
       display: inline-block;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(33, 59, 110, 0.1);
-      margin-bottom: 28px;
+      box-shadow: 0 6px 20px rgba(24, 58, 115, 0.04);
+      border: 1px solid var(--light-gray);
+      margin-bottom: 44px;
     }
 
     .qr-section img {
       display: block;
-      width: 140px;
-      height: 140px;
+      width: 112px;
+      height: 112px;
     }
 
-    /* Partner Brands Footer Grid */
+    /* Footer - Authorized Systems */
     .partner-section {
       width: 100%;
-      border-top: 1px solid rgba(33, 59, 110, 0.12);
-      padding-top: 18px;
+      border-top: 1px solid var(--light-gray);
+      padding-top: 24px;
     }
 
     .partner-label {
-      font-size: 0.62rem;
+      font-size: 0.58rem;
       font-weight: 700;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--muted-gray);
-      margin-bottom: 12px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      opacity: 0.75;
     }
 
     .partner-logos {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 28px;
     }
 
     .partner-brand {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
-      color: var(--brand-navy);
+      letter-spacing: 0.16em;
+      color: var(--primary-navy);
       text-transform: uppercase;
-      opacity: 0.85;
+    }
+
+    .partner-bullet {
+      font-size: 0.6rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
@@ -213,8 +218,8 @@
     <h1>SYRA SANTOS</h1>
     <p class="title">SALES ARCHITECT</p>
     
-    <!-- Accent Bar -->
-    <div class="accent-bar"></div>
+    <!-- Understated Divider -->
+    <div class="divider-line"></div>
 
     <!-- Contact Info -->
     <div class="info-group">
@@ -227,19 +232,19 @@
       MAKATI | PHILIPPINES
     </div>
 
-    <!-- Valid vCard QR Code including TEL -->
+    <!-- QR Code Section -->
     <div class="qr-section">
-      <img src="https://quickchart.io/qr?text=BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3ASantos%3BSyra%0D%0AFN%3ASyra+Santos%0D%0AORG%3ADiversifiedsource+Inc.%0D%0ATITLE%3ASales+Architect%0D%0ATEL%3A%2B639432441266%0D%0AEMAIL%3Adiversifiedsource.design%40gmail.com%0D%0AADR%3A%3B%3BMakati%3B%3B%3BPhilippines%0D%0AEND%3AVCARD&size=140" alt="Scan to Save Contact">
+      <img src="https://quickchart.io/qr?text=BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3ASantos%3BSyra%0D%0AFN%3ASyra+Santos%0D%0AORG%3ADiversifiedsource+Inc.%0D%0ATITLE%3ASales+Architect%0D%0ATEL%3A%2B639432441266%0D%0AEMAIL%3Adiversifiedsource.design%40gmail.com%0D%0AADR%3A%3B%3BMakati%3B%3B%3BPhilippines%0D%0AEND%3AVCARD&size=112" alt="Scan to Save Contact">
     </div>
 
-    <!-- Minimal Partner Brand Logos -->
+    <!-- Footer Grid -->
     <div class="partner-section">
-      <div class="partner-label">Authorized Systems</div>
+      <div class="partner-label">AUTHORIZED SYSTEMS</div>
       <div class="partner-logos">
         <span class="partner-brand">RENSON</span>
-        <span class="partner-brand">•</span>
+        <span class="partner-bullet">•</span>
         <span class="partner-brand">OTIIMA</span>
-        <span class="partner-brand">•</span>
+        <span class="partner-bullet">•</span>
         <span class="partner-brand">CENTOR</span>
       </div>
     </div>
