@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYRA SANTOS | SALES ARCHITECT</title>
+  
+  <!-- Montserrat Font for Body, Century Gothic Fallbacks for Logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Color Palette derived from the navy image with soft neutral contrasts */
+    :root {
+      --brand-navy: #213B6E;        /* Primary Brand Color */
+      --brand-navy-dark: #16284B;   /* High-Contrast Text Color */
+      --soft-ice-bg: #EAEFF5;       /* Page Backdrop */
+      --card-bg: #F8FAF7;           /* Eye-Friendly Off-White Card Surface */
+      --muted-gray: #6C7A89;        /* Subtle Secondary Info */
+      --accent-line: #213B6E;        /* Divider Bar */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', 'Century Gothic', sans-serif;
+    }
+
+    body {
+      background-color: var(--soft-ice-bg);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 20px;
+    }
+
+    /* Main Card Container */
+    .card-container {
+      background-color: var(--card-bg);
+      border-radius: 28px;
+      width: 100%;
+      max-width: 380px;
+      padding: 40px 32px 36px;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(33, 59, 110, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid rgba(33, 59, 110, 0.15);
+    }
+
+    /* Recreated HTML/CSS Company Logo */
+    .company-logo {
+      margin-bottom: 28px;
+    }
+
+    .logo-main {
+      font-family: 'Century Gothic', 'Montserrat', sans-serif;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      color: var(--brand-navy);
+      line-height: 1;
+    }
+
+    .logo-main .bold-part {
+      font-weight: 800;
+    }
+
+    .logo-main .light-part {
+      font-weight: 400;
+    }
+
+    .logo-sub {
+      font-family: 'Century Gothic', 'Montserrat', sans-serif;
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 0.42em;
+      color: var(--brand-navy);
+      text-transform: uppercase;
+      margin-top: 5px;
+      text-align: center;
+      padding-left: 0.42em; /* Centers letter spacing offset */
+    }
+
+    /* Individual's Name */
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--brand-navy-dark);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+
+    /* Position Title */
+    .title {
+      font-size: 0.78rem;
+      color: var(--brand-navy);
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    /* Divider Accent */
+    .accent-bar {
+      height: 3px;
+      width: 44px;
+      background-color: var(--brand-navy);
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+
+    /* Contact Information */
+    .info-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+    .info-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--brand-navy-dark);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s ease;
+      word-break: break-all;
+    }
+
+    .info-link:hover {
+      opacity: 0.75;
+    }
+
+    /* Location */
+    .location {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--brand-navy);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    /* QR Code Tile */
+    .qr-section {
+      background-color: #FFFFFF;
+      padding: 12px;
+      border-radius: 18px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(33, 59, 110, 0.1);
+      margin-bottom: 28px;
+    }
+
+    .qr-section img {
+      display: block;
+      width: 140px;
+      height: 140px;
+    }
+
+    /* Partner Brands Footer Grid */
+    .partner-section {
+      width: 100%;
+      border-top: 1px solid rgba(33, 59, 110, 0.12);
+      padding-top: 18px;
+    }
+
+    .partner-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted-gray);
+      margin-bottom: 12px;
+    }
+
+    .partner-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .partner-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--brand-navy);
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    
+    <!-- Company Logo Header -->
+    <div class="company-logo">
+      <div class="logo-main"><span class="bold-part">diversified</span><span class="light-part">source</span></div>
+      <div class="logo-sub">INCORPORATED</div>
+    </div>
+
+    <!-- Name & Title -->
+    <h1>SYRA SANTOS</h1>
+    <p class="title">SALES ARCHITECT</p>
+    
+    <!-- Accent Bar -->
+    <div class="accent-bar"></div>
+
+    <!-- Contact Info -->
+    <div class="info-group">
+      <a href="tel:09432441266" class="info-link">0943 244 1266</a>
+      <a href="mailto:diversifiedsource.design@gmail.com" class="info-link">diversifiedsource.design@gmail.com</a>
+    </div>
+
+    <!-- Location -->
+    <div class="location">
+      MAKATI | PHILIPPINES
+    </div>
+
+    <!-- Valid vCard QR Code including TEL -->
+    <div class="qr-section">
+      <img src="https://quickchart.io/qr?text=BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3ASantos%3BSyra%0D%0AFN%3ASyra+Santos%0D%0AORG%3ADiversifiedsource+Inc.%0D%0ATITLE%3ASales+Architect%0D%0ATEL%3A%2B639432441266%0D%0AEMAIL%3Adiversifiedsource.design%40gmail.com%0D%0AADR%3A%3B%3BMakati%3B%3B%3BPhilippines%0D%0AEND%3AVCARD&size=140" alt="Scan to Save Contact">
+    </div>
+
+    <!-- Minimal Partner Brand Logos -->
+    <div class="partner-section">
+      <div class="partner-label">Authorized Systems</div>
+      <div class="partner-logos">
+        <span class="partner-brand">RENSON</span>
+        <span class="partner-brand">•</span>
+        <span class="partner-brand">OTIIMA</span>
+        <span class="partner-brand">•</span>
+        <span class="partner-brand">CENTOR</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
